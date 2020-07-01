@@ -1,0 +1,76 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/polyfill": "7.4.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "prop-types": "15.7.2",
+    "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.3",
+    "@babel/core": "7.4.3",
+    "babel-core": "7.0.0-bridge.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "4.1.0",
+    "eslint-import-resolver-webpack": "0.11.1",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "1.6.0",
+    "lint-staged": "8.1.5",
+    "node-sass": "^4.14.1",
+    "pre-commit": "1.2.2",
+    "prettier": "^2.0.5",
+    "react-dropzone": "^11.0.1",
+    "react-dropzone-uploader": "^2.11.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettify": "prettier --write"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,jsx}": [
+        "pretty-quick --staged",
+        "eslint --fix",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/**.json"
+    ]
+  },
+  "pre-commit": "lint:staged",
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
